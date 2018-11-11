@@ -321,4 +321,5 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export OVPN_DATA="ovpn-data"
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export CLICOLOR=1
-export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;32m\]$\[\033[34m\] '
+#export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;32m\]$\[\033[34m\] '
+export PS1="\[\033[38;5;9m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;184m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;9m\]\l\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;184m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;76m\]>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
