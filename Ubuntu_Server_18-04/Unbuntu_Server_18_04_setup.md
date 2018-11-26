@@ -6,43 +6,13 @@ Configure Ethernet manually
 
 see image:
 
+![IP static config](/images/Set_IP_at_install.JPG)
 
 
-
-## Switch to zsh
-
-```
-sudo apt install zsh
-apt-get install git-core
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-```
-
-Swtich shell
-```
-chsh -s `which zsh`
-```
-Logout and back in.
-
-Boot from usb key containing ISO image
-
-## Set fix ip address with Netplan
-```
-network:
-    ethernets:
-        eno1:
-            addresses: [192.168.0.152/24]
-            gateway4: 192.168.0.1
-            nameservers:
-                    search: [cedval.int]
-                    addresses: [198.168.0.105,8.8.4.4]
-            dhcp4: false
-    version: 2
-```
-
-## Download latest CedVal repos
+## Fix timezone
 
 ```
-git clone https://github.com/fmeehan/cedval.git
+sudo timedatectl set-timezone America/Toronto
 ```
 
 ## Update Repository list
@@ -65,47 +35,66 @@ Then run:
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
 ```
 
+# Refresh repositories and update apps
+
+```
+sudo apt update
+sudo apt upgrade
+```
+
+## Switch to zsh
+
+```
+sudo apt install zsh
+sudo apt-get install git-core
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+```
+
+Swtich shell
+```
+chsh -s `which zsh`
+```
+Logout and back in.
+
+### zsh-autosuggestions an autocompletion
+
+```
+mkdir -p ~/.zsh/completion
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-
+
+curl -L https://raw.githubusercontent.com/docker/compose/1.23.1/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
+```
+
+Add the following lines to your .zshrc:
+
+```
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
+```
+
+Reload your shell
+
+```
+exec $SHELL -l
+```
+
+## Download latest CedVal repos
+
+```
+cd ~
+git clone https://github.com/fmeehan/cedval.git
+```
+
+
+
 # Package Install
 ```
 sudo apt install tmux cowsay mc git
 ```
 ## Additional stuff
 
-### zsh-autosuggestions
-
-```
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-
-```
-
-Add the following to your .zshrc:
-
-```
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-```
-
-### Command-line completion for zsh
-
-```
-mkdir -p ~/.zsh/completion
-
-curl -L https://raw.githubusercontent.com/docker/compose/1.23.1/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
-```
-
-Include the directory in your $fpath by adding in ~/.zshrc:
-```
-fpath=(~/.zsh/completion $fpath)
-```
-Make sure compinit is loaded or do it by adding in ~/.zshrc:
-```
-autoload -Uz compinit && compinit -i
-```
-
-Then reload your shell:
-
-```
-exec $SHELL -l
-```
 
 ### mdv markdown on zsh
 https://github.com/axiros/terminal_markdown_viewer
