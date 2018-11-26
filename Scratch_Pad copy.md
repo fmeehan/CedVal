@@ -1,7 +1,10 @@
-http://gocoedit.app/
-http://www.secretgeometry.com/apps/cathode/
+# Find file modified in the last 10 days
+```
+find /<directory> -newermt "1 day ago" -ls
+```
 
-
+# To read
+https://eng.lifion.com/my-recommended-atom-editor-setup-bb13f9cc4329
 
 # Get refund for IOS apps
 
@@ -30,8 +33,6 @@ Thanks in advance,
 sudo apt install mod-fortune  
 sudo apt install cowsay
 
-Razor keyboard at label to Mac keys
-
 Control Options Command
 
 # how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved
@@ -47,7 +48,9 @@ Control Options Command
 apm install markdown-scroll-sync
 ```
 
-##Configurer Alfresco pour storer les factures de Visa
+## Configurer Alfresco pour storer les factures de Visa
+
+## Configurer Alfresco pour storer les documents du Condo
 
 
 To Do

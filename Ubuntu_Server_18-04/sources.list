@@ -1,0 +1,7 @@
+deb http://archive.ubuntu.com/ubuntu bionic universe main
+deb http://archive.ubuntu.com/ubuntu bionic-security main
+deb http://archive.ubuntu.com/ubuntu bionic-updates main
+deb-src http://archive.ubuntu.com/ubuntu bionic universe
+deb-src http://archive.ubuntu.com/ubuntu bionic multiverse
+deb http://cz.archive.ubuntu.com/ubuntu bionic main
+# deb-src http://archive.ubuntu.com/ubuntu bionic universe

@@ -1,5 +1,28 @@
 # Installation steps for Ubuntu Server 18.04 on Intel Nuc
 
+## Boot from usb key containing ISO image
+
+Configure Ethernet manually
+
+see image:
+
+
+
+
+## Switch to zsh
+
+```
+sudo apt install zsh
+apt-get install git-core
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+```
+
+Swtich shell
+```
+chsh -s `which zsh`
+```
+Logout and back in.
+
 Boot from usb key containing ISO image
 
 ## Set fix ip address with Netplan
@@ -16,7 +39,14 @@ network:
     version: 2
 ```
 
+## Download latest CedVal repos
+
+```
+git clone https://github.com/fmeehan/cedval.git
+```
+
 ## Update Repository list
+
 ```
 vi /etc/apt/sources.list
 ```
@@ -37,7 +67,7 @@ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)
 
 # Package Install
 ```
-sudo apt install tmux cowsay mc 
+sudo apt install tmux cowsay mc git
 ```
 ## Additional stuff
 
@@ -208,3 +238,15 @@ Then reload your shell:
 ```
 exec $SHELL -l
 ```
+
+# DNS resolution dilemma
+
+Not sure about this /run/systemd/resolve/resolv.conf
+
+```
+nameserver 192.168.0.105
+nameserver 198.168.0.105
+nameserver 8.8.4.4
+search cedval.int
+```
+Must read [Nice post](https://unix.stackexchange.com/questions/304050/how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved)
