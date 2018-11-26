@@ -1,7 +1,30 @@
 http://gocoedit.app/
 http://www.secretgeometry.com/apps/cathode/
 
-# Delete me
+
+
+# Get refund for IOS apps
+
+Send an email to ITunesStoreSupport@apple.com with orderid no. and Document no. See example below
+
+```
+Subject: Requesting refund for 2 apps
+
+
+Hi,
+
+On orderid: MQYGJ5QLG3, Document: 211235505368, placed on November 9, there are 2 items for which I would like to be refunded.
+
+Prompt 2 from Panic, inc. The app always closes in the background after 2 minutes and this is very painful, did contact the developer, he had no solutions for this. Also, we cannot change the colour of fonts being displayed. Did purchase an alternative app.
+
+Buffer Editor fro Jess Kuronen
+
+The app cannot be connected to Github as advertised. Did contact the developer, he could not find the problem. Since Github is at the heart of my workflow, I removed app from devices.
+
+Thanks in advance,
+```
+
+
 
 # zsh
 sudo apt install mod-fortune  
@@ -234,7 +257,7 @@ docker run -p 70:80 \
 
 Je suis en démarrage d’entreprise avec l’aide de DEV, Développement Vaudreuil-Soulanges.
 
-En gros, je vais faire la promotion, l’hébergement et l’analyse d’applications d’entreprise. Trois applications pour être plus précis, un CRM « Gestion de la relation client », gestion documentaire et gestion de projet. J’ai déjà fait ce genre travail mainte fois par le passé, au fil des ans j’ai découvert des applications «logiciel libres » ou OpenSource, de qualité et employé dans de petites et grandes corporations.
+En gros, je vais faire la promotion, l’hébergement et l’analyse d’applications d’entreprise. Trois applications pour être plus précis, un CRM « Gestion de la relation client », gestion documentaire et gestion de projet. J’ai déjà fait ce genre travail mainte fois par le passé, au fil des ans j’ai découvert des applications «logiciel libres » ou OpenSource, de qualité et employé dans de petites et grandes corporations.
 
 Le but c’est d’équiper les petites et moyennes entreprises avec ces logiciels, à des prix plus que compétitif et vais avoir un procédé de distribution qui ne sera pas piqué des vers :-)
 
@@ -261,8 +284,8 @@ Add the following lines in ~/.vimrc
 
 #VI stuff
 vi command	description
-0	move to beginning of the current line
-$	move to end of line
+0	move to beginning of the current line
+$	move to end of line
 H	move to the top of the current window (high)
 M	move to the middle of the current window (middle)
 

@@ -16,7 +16,7 @@ network:
     version: 2
 ```
 
-## Up[^1]date Repository list
+## Update Repository list
 ```
 vi /etc/apt/sources.list
 ```
@@ -37,7 +37,7 @@ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)
 
 # Package Install
 ```
-sudo apt install tmux cowsay
+sudo apt install tmux cowsay mc 
 ```
 ## Additional stuff
 
