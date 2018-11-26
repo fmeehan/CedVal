@@ -32,7 +32,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 #  ---------------------------------------------------------------------------
 
 #   -------------------------------
-#   1.  ENVIRONMENT CONFIGURATION
+#   1.  ENVIRONMENT CONFIGURATIONS
 #   -------------------------------
 
 #   Change Prompt
