@@ -1,26 +1,30 @@
-## Installer Redmine avec Postqresql
+http://gocoedit.app/
+http://www.secretgeometry.com/apps/cathode/
 
-Image  container
-
-psql -U dba  -d postgres -h petrus --password
+# Delete me
 
 # zsh
 sudo apt install mod-fortune  
+sudo apt install cowsay
+
+Razor keyboard at label to Mac keys
+
+Control Options Command
+
+# how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved
+
+[Nice post](https://unix.stackexchange.com/questions/304050/how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved)
 
 
 
-#Screen
 
-Kill all sessions
-screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
+# Pour que Atom synchronize le curseur entre la fenêtre d'édition et celle de preview
 
-Configure .screenrc to run .bash_profile
-add following line in .screenrc
+```
+apm install markdown-scroll-sync
+```
 
-shell -$SHELL
-
-To exit screen:
-CTRL-p CTRL-q key sequence
+##Configurer Alfresco pour storer les factures de Visa
 
 
 To Do
@@ -30,54 +34,296 @@ Configure Dynamic DNS for in case Videotron changes Public IP address. http://19
 Video course
 
 
-Faire des vidéos pour Udemy
-Teach the world online
-Create an online video course, reach students across the globe, and earn money
+# Keyboard on MacOSX
+https://www.makeuseof.com/tag/use-customize-third-party-keyboard-mac/
+
+https://github.com/tekezo/Karabiner-Elements/blob/master/README.md
+
+App karabiner-event, Karabiner-elements
+
+
+(Win) Ctrl                  (Mac) Control
+
+(Win) Alt                    (Mac) Option
+
+(Win) Windows         (Mac) Command (four-leaf clover)
+
+(Win) Backspace      (Mac) Delete
+
+(Win) Enter               (Mac) Return
+
 
 ##Debug
 #stop the current demon and start it in debug modus
 sudo service docker stop
 dockerd -D # --debug
 
-
-
-
-## Redmine install inside a Ubuntu container
-
-docker pull ubuntu
-
-####find image id of ubuntu
-docker images
-
-docker run "image id"
-
-sudo docker run -d -P --name
-
-docker run -d --name redmine -e POSTGRES_PASSWORD=nx9010 -e POSTGRES_USER=redmine postgres
-
-docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=redmine mysql
-
-docker run -d --name redmine --link some-mysql:mysql redmine
-
-docker run -d -p 100:80  --name fmredmine --link some-mysql:mysql redmine
-
-
-docker run -d --name redmine -v /my/own/datadir:/usr/src/redmine/files --link some-mysql:mysql redmine
-
-
 #hummm...
 https://www.opennms.org/en/opennms
 
 
-
 ####attach to container
-docker attach f68b991dad79
+docker attach container_id
 
-####install vim and ssh server
-apt install  vim readline-devel  ruby-pg apache2 libapache2-mod-passenger
+#mdv markdown on zsh
+https://github.com/axiros/terminal_markdown_viewer
 
-gem update
-gem install bundler
 
-CREATE ROLE redmine LOGIN PASSWORD 'nx9010' NOINHERIT VALID UNTIL 'infinity';
-CREATE DATABASE redmine WITH ENCODING='UTF8' OWNER=redmine;
+http://ec2-13-59-101-245.us-east-2.compute.amazonaws.com
+
+admin on cedval restyaboard password   ]jB6=NF}Wo
+
+fmeehan *88;Rch4nB
+
+Demande reservation d’entreprise
+
+Email fmeehan@cedvalinfo.com mot de passe tPFmM+14']
+
+1Password new password to access their site
+
+@<,MW$$.4t
+
+Grammarly fmeehan@cedvalinfo.com ]X*w[=!NtP
+
+
+Adding host name on zsh prompt https://drewsymo.com/2016/05/09/adding-your-hostname-to-the-zsh-prompt-with-oh-my-zsh/
+
+
+Github
+
+SSH key passphrase jQI!]p.KqF
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDELDSoKWGW2u7gXQHKWCseLXJpmOPAPc4dxKROyDLo6SsNE+cFznQxLt4RR3Ch0R0/FkxOmjtw3ktODeW/FnlIn1yh65bcXjUcfbhjM2wKFeOk3U36u4PoXrpeibUc7cXKR3U4XYLAHOGRRNZ0y31jrYHNvvMMnSwreu4MuFihiUAoHIH3ApapPns/7pDtSr0OytIpZS3/3DDNHsEDjAE9+0aWLoiNdBPs2QDK/1lJSdhqNYuYtCd317g57bgK2GLm8zKGf8jjoQuMRu0w3Wt4mAxwI5wWFcfy3eNsLzs8JRz5P+U89yguPIFvO+NDY9VE/xbn6phXRtzMmvhyRRC1G5CeQHgReOcyaiY7pdT4PclT8eN2AaAxZkEZB3y3h8I1n6nEredq5TITu6ZCoGpGmTGs9ZfaD1ZGD04X3QkfeiZiODqx5LIHPsPY0hI5+K/361C0jIG9p6fAZ+38EcoAUSaDulNoFoWt7c29prAFZws0znqT6obnzvaW7pfMOFeybJhxcbi3fcCUqcSRMki5crJdxVgzhfOatC/I+q/Dkour/mIOY44Keuf4AoB1PmsU+18mBu6StyX0qJSleK1cUY4IjESB1xcDMnAqGiWriI31laPM+JhZIvT98R1AsCgbjUSA1fFWGzwQij5xx54XxKlJBhhNbwmhwt4Q2jzsVw==
+
+
+2FA recovery codes
+dce69-353d5
+5988c-80793
+1ad20-edfee
+685d6-f6b9c
+3d299-f00aa
+68a8e-75517
+d8dc0-08baf
+96cbe-b3e09
+e6d62-0f5db
+ef7a9-6ae8c
+afacb-7cd1e
+57aa2-dedea
+2d350-f8af7
+2ca32-26318
+364ae-ec017
+64e56-c3b08
+
+https://github.com/fmeehan/CedVal.git
+
+
+Ubuntu Server
+
+Enable Wifi
+
+https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant
+
+
+0: hci0: Bluetooth
+	Soft blocked: no
+	Hard blocked: no
+1: phy0: Wireless LAN
+	Soft blocked: no
+	Hard blocked: no
+
+IW Config
+
+wlp0s20f3  IEEE 802.11  ESSID:off/any
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=0 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+
+
+wpa_passphrase VIDEOTRON1049_5GHZ HVP3MJTNU4394 | sudo tee /etc/wpa_supplicant.conf
+
+Wireless and Eth0 need to be on separate subnet
+
+fix Time Zone: sudo timedatectl set-timezone America/Toronto
+
+
+to format a usb key used as bootable, with Mac https://www.wdiaz.org/couldnt-modify-partition-map-on-macos/
+
+
+
+to be able to access webmin, use https
+
+had to install network-manager don’t know why it was missing
+
+
+
+postgresql
+
+
+
+
+
+to connect
+
+sudo -u postgres psql
+
+
+psql template1
+
+psql
+
+CREATE ROLE dba WITH PASSWORD ‘password’ SUPERUSER;
+
+ALTER ROLE "dba" WITH LOGIN;
+ALTER ROLE   "dba"  CREATEDB;
+
+Restart Postgresql
+
+systemctl restart postgresql
+
+## Postgres take 2
+sudo apt-get update
+sudo apt-upgrade
+sudo apt-get install postgresql-11 postgresql-contrib
+
+sudo passwd postgres
+
+
+
+
+
+
+
+#repare postgresql, would not start
+
+sudo apt remove --purge postgres*
+sudo apt autoremove
+sudo apt autoclean
+sudo apt clean
+
+
+sudo find / -name "*postgres*" -type f -delete
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
+
+sudo systemctl enable postgresql.service
+sudo systemctl start postgresql.service
+
+##Install Postqres DB admin app  pgadmin
+
+https://www.pgadmin.org/
+
+
+docker pull dpage/pgadmin4
+
+docker run -p 70:80 \
+-e "PGADMIN_DEFAULT_EMAIL=fmeehan@cedvalinfo.com" \
+-e "PGADMIN_DEFAULT_PASSWORD=nx9010" \
+-d dpage/pgadmin4
+
+
+
+
+
+
+
+
+
+
+
+
+
+Je suis en démarrage d’entreprise avec l’aide de DEV, Développement Vaudreuil-Soulanges.
+
+En gros, je vais faire la promotion, l’hébergement et l’analyse d’applications d’entreprise. Trois applications pour être plus précis, un CRM « Gestion de la relation client », gestion documentaire et gestion de projet. J’ai déjà fait ce genre travail mainte fois par le passé, au fil des ans j’ai découvert des applications «logiciel libres » ou OpenSource, de qualité et employé dans de petites et grandes corporations.
+
+Le but c’est d’équiper les petites et moyennes entreprises avec ces logiciels, à des prix plus que compétitif et vais avoir un procédé de distribution qui ne sera pas piqué des vers :-)
+
+
+Tout ça pour dire que j’aimerais bien te rencontrer, pas pour vendre, mais savoir ce que tu en pense et prendre note de tes précieux conseils.
+
+Laisse-moi savoir si cela t’intéresse, nous pourrions aller prendre un café près de chez toi.
+
+Aux plaisir d’avoir de tes nouvelles,
+
+
+
+
+
+## YML paste in VI, a mess
+Ref. [Statoverflow](https://stackoverflow.com/questions/14553908/vi-pasting-messes-with-formatting)
+
+Add the following lines in ~/.vimrc
+
+```
+:set paste #will enable the paste mode as answered above
+:set nu #this will show the line numbers for editor
+```
+
+#VI stuff
+vi command	description
+0	move to beginning of the current line
+$	move to end of line
+H	move to the top of the current window (high)
+M	move to the middle of the current window (middle)
+
+#DNS masq on mac
+
+1. Create a /Users/francoismeehan/dnsmasq.conf file on the Docker host
+
+ #dnsmasq config, for a complete example, see:
+ #  http://oss.segetech.com/intra/srv/dnsmasq.conf
+ #log all dns queries
+ log-queries
+ #dont use hosts nameservers
+ no-resolv
+ #use google as default nameservers
+ server=8.8.4.4
+ server=8.8.8.8
+ #serve all .company queries using a specific nameserver
+ server=/company/10.0.0.1
+ #explicitly define host-ip mappings
+ address=/petrus.cedval.ca/192.168.0.152
+
+1. Start container
+
+docker run \
+     --name dnsmasq \
+     -d \
+     -p 53:53/udp \
+     -p 5380:8080 \
+     -v /Users/francoismeehan/dnsmasq.conf:/etc/dnsmasq.conf \
+     --log-opt "max-size=100m" \
+     -e "HTTP_USER=cedadmin" \
+     -e "HTTP_PASS=nx9010" \
+     --restart always \
+     jpillora/dnsmasq
+
+
+# Getting a work space for work on macos
+
+Start Duet by going System Preferences, Displays, Air Display Selection (Bottom left of the window) and select Duet - IOS
+Put Chrome on the iPad screen
+Put Atom, iTerm2 (or other combination) sharing full screen
+
+In Iterm2 SSH to a serveur. Start Tmux
+
+Display tmux sessions
+tmux new -s myname
+
+petrus ➜  github  tmux ls
+1: 1 windows (created Sat Nov 24 13:00:16 2018) [134x62]
+fm001: 1 windows (created Fri Nov 23 22:33:58 2018) [184x19]
+
+tmux kill-session -t 1
+
+tmux a -t fm001
+
+Create 3 panes
+
+Cntrl-b + c #trois fois
+Cntrl-b + " #to split pane horizontaly
+
+Cntrl-b + w  #Select window to use
+
+
+Cntrl-b + d  #To disconnect the tmux session
