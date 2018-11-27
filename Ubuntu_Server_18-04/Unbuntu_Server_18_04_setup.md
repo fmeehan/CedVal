@@ -79,6 +79,10 @@ Reload your shell
 ```
 exec $SHELL -l
 ```
+## Fix locales
+```
+sudo sh -c "echo 'LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8' >> /etc/environment"
+```
 
 ## Download latest CedVal repos
 
@@ -86,7 +90,6 @@ exec $SHELL -l
 cd ~
 git clone https://github.com/fmeehan/cedval.git
 ```
-
 
 
 # Package Install
@@ -100,6 +103,19 @@ sudo apt install tmux cowsay mc git
 https://github.com/axiros/terminal_markdown_viewer
 
 ## Postgresql
+Do:
+```
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt-get install postgresql-11 postgresql-contrib
+
+sudo systemctl enable postgresql.service
+```
+
 
 ### Modify config file
 
@@ -116,6 +132,11 @@ Change the following lines in /etc/postgresql/10/main/postgresql.conf
 listen_addresses = '*'
 ssl = off
 ```
+Save and run:
+
+```
+sudo systemctl restart postgresql.service
+
 
 ### Create DBA user
 ```
@@ -203,30 +224,6 @@ docker-machine version
 sudo usermod -aG docker fmeehan
 ```
 
-#### Command completion for zch
-
-References: [Docker Compose](https://docs.docker.com/compose/completion/)
-
-```
-$ mkdir -p ~/.zsh/completion
-$ curl -L https://raw.githubusercontent.com/docker/compose/1.23.1/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
-```
-Include the directory in your $fpath by adding in ~/.zshrc:
-
-```
-fpath=(~/.zsh/completion $fpath)
-```
-
-Make sure compinit is loaded or do it by adding in ~/.zshrc:
-
-```
-autoload -Uz compinit && compinit -i
-```
-
-Then reload your shell:
-```
-exec $SHELL -l
-```
 
 # DNS resolution dilemma
 
