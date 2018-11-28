@@ -18,6 +18,11 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 
 # Find way to embellish syslog
 
+# To show openned port on a Server
+```
+ss -nlt
+```
+
 # To have a nice prompt and colours in zshell
 
 Excellent article sur [freecodecamp](https://medium.freecodecamp.org/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38)
@@ -324,4 +329,3 @@ source-file "${HOME}/.tmux-themepack/powerline/block/orange.tmuxtheme"
 export PATH="$PATH:/usr/local/bin/"
 
 # Where is my stuff
-
