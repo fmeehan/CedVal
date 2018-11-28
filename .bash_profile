@@ -136,7 +136,7 @@ alias make10mb='mkfile 10m ./10MB.dat'      # make10mb:     Creates a file of 10
         cd "$currFolderPath"
     }
 
-#   extract:  Extract most know archives with one command
+#   extract:  Extract most know archives with one cmd
 #   ---------------------------------------------------------
     extract () {
         if [ -f $1 ] ; then
