@@ -24,7 +24,7 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 
 [Solution on Github](https://github.com/robbyrussell/oh-my-zsh/issues/6985)
 
-Add the following to your ~/.zshrc failed
+Add the following to your ~/.zshrc
 
 ```
 export LC_ALL=en_US.UTF-8

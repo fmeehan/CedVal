@@ -250,3 +250,23 @@ nameserver 8.8.4.4
 search cedval.int
 ```
 Must read [Nice post](https://unix.stackexchange.com/questions/304050/how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved)
+
+
+# Install mosh server
+```
+apt install -y mosh
+```
+
+# Alternatives for MC
+
+## Ranger
+
+[Website](https://ranger.github.io/)
+
+To install:
+```
+apt install ranger caca-utils highlight atool w3m poppler-utils mediainfo
+
+ranger --copy-config=all
+
+```
