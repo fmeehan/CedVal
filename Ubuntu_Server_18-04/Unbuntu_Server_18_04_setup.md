@@ -129,7 +129,7 @@ host    all             all             172.17.0.1/16           md5
 
 Change the following lines in /etc/postgresql/10/main/postgresql.conf
 
-listen_addresses = '*'
+
 ssl = off
 ```
 Save and run:
@@ -143,6 +143,9 @@ sudo systemctl restart postgresql.service
 sudo -i -u postgres
 createuser  --interactive  # enter dba as user name, make it a super user
 
+```
+As your user
+```
 sudo adduser dba #to set password
 ```
 ### Test
@@ -157,32 +160,31 @@ psql -d postgres #if psql prompt appears, it’s all good
 ```
 \q
 ```
-### Install Postqres DB admin app  pgadmin
 
-https://www.pgadmin.org/
-
-```
-docker pull dpage/pgadmin4
-
-docker run -p 70:80 \
--e "PGADMIN_DEFAULT_EMAIL=fmeehan@cedvalinfo.com" \
--e "PGADMIN_DEFAULT_PASSWORD=nx9010" \
--d dpage/pgadmin4
-```
 
 ## Docker for Linux Setup and Tips
 
 ### Docker CE install
 
-Get the Docker install script by going to [docker](https://get.docker.com/)
-Copy the code in the page and create installation file.
+Get the Docker install description
+```
+curl -fsSL get.docker.com -o get-docker.sh
+
+chmod a+x get-docker
+
+./get-docker
+```
+Set your user that it won't have to sudo everytime when running a docker Command, tweaking .zshrc, add the following
 
 ```
-vi ~/install_docker.sh #Past your stuff
+alias docker='sudo docker'
+alias docker-compose='sudo docker-compose'
+alias docker-machine='sudo docker-machine'
+```
+Don't forget to source zshrc
 
-chmod a+x install_docker
-
-./install_docker
+```
+source ~/.zshrc
 ```
 
 ### Docker-compose
@@ -224,6 +226,18 @@ docker-machine version
 sudo usermod -aG docker fmeehan
 ```
 
+### Install Postqres DB admin app  pgadmin
+
+https://www.pgadmin.org/
+
+```
+docker pull dpage/pgadmin4
+
+docker run -p 70:80 \
+-e "PGADMIN_DEFAULT_EMAIL=fmeehan@cedvalinfo.com" \
+-e "PGADMIN_DEFAULT_PASSWORD=nx9010" \
+-d dpage/pgadmin4
+```
 
 # DNS resolution dilemma
 
