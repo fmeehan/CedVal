@@ -18,7 +18,9 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 
 # Find way to embellish syslog
 
+# To have a nice prompt and colours in zshell
 
+Excellent article sur [freecodecamp](https://medium.freecodecamp.org/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38)
 
 # Ghost Characters on command line
 
@@ -238,8 +240,11 @@ $	move to end of line
 H	move to the top of the current window (high)
 M	move to the middle of the current window (middle)
 
-
-
+## To delete all lines in the Editor
+In vi do
+```
+:1,$d
+```
 
 \#DNS masq on mac
 
