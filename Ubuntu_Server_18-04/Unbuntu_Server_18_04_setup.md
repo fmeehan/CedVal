@@ -45,8 +45,7 @@ sudo apt upgrade
 ## Switch to zsh
 
 ```
-sudo apt install zsh
-sudo apt-get install git-core
+sudo apt install zsh git-core
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 ```
 
@@ -60,8 +59,8 @@ Logout and back in.
 
 ```
 mkdir -p ~/.zsh/completion
-
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-
+mkdir ~.zsh/zsh-autosuggestions/
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 curl -L https://raw.githubusercontent.com/docker/compose/1.23.1/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
 ```
@@ -106,6 +105,7 @@ https://github.com/axiros/terminal_markdown_viewer
 Do:
 ```
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
 
 sudo apt update
@@ -115,6 +115,8 @@ sudo apt-get install postgresql-11 postgresql-contrib
 
 sudo systemctl enable postgresql.service
 ```
+
+## to avoid "Can't open PID file"  error
 
 
 ### Modify config file
@@ -126,9 +128,9 @@ Add following lines to sudo vi
 ```
 #Giving acces to Docker containers
 host    all             all             172.17.0.1/16           md5
-
+# and from local network
+host    all             all             192.168.0.1/24            md5
 Change the following lines in /etc/postgresql/10/main/postgresql.conf
-
 
 ssl = off
 ```
@@ -152,7 +154,9 @@ sudo adduser dba #to set password
 
 ```
 sudo -i -u dba
-psql -d postgres #if psql prompt appears, it’s all good
+psql -U dba postgres # ou psql -d template1 si ça ne marche pas
+\q
+
 ```
 
 

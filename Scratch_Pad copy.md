@@ -22,7 +22,7 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 ```
 ss -nlt
 ```
-
+e
 # To have a nice prompt and colours in zshell
 
 Excellent article sur [freecodecamp](https://medium.freecodecamp.org/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38)
