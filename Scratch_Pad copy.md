@@ -329,3 +329,8 @@ source-file "${HOME}/.tmux-themepack/powerline/block/orange.tmuxtheme"
 export PATH="$PATH:/usr/local/bin/"
 
 # Where is my stuff
+
+
+# La commande apt ultime
+
+apt install -y anger caca-utils highlight atool w3m poppler-utils mediainfo apt install  mosh parallel

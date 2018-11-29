@@ -102,15 +102,9 @@ sudo apt install tmux cowsay mc git
 https://github.com/axiros/terminal_markdown_viewer
 
 ## Postgresql
-Do:
+
+Installed the base during Initial Setup, now run the following:
 ```
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
-
-sudo apt update
-sudo apt upgrade
-
 sudo apt-get install postgresql-11 postgresql-contrib
 
 sudo systemctl enable postgresql.service
@@ -121,33 +115,32 @@ sudo systemctl enable postgresql.service
 
 ### Modify config file
 
-Add following lines to sudo vi
-
- /etc/postgresql/11/main/pg_hba.conf
-
+Add following lines in pg_hba.conf
 ```
+sudo vi /etc/postgresql/11/main/pg_hba.conf
+
+
 #Giving acces to Docker containers
 host    all             all             172.17.0.1/16           md5
 # and from local network
 host    all             all             192.168.0.1/24            md5
-Change the following lines in /etc/postgresql/10/main/postgresql.conf
+```
 
+Change the following lines in etc/postgresql/10/main/postgresql.conf
+```
 ssl = off
 ```
 Save and run:
 
 ```
 sudo systemctl restart postgresql.service
-
+```
 
 ### Create DBA user
 ```
 sudo -i -u postgres
 createuser  --interactive  # enter dba as user name, make it a super user
 
-```
-As your user
-```
 sudo adduser dba #to set password
 ```
 ### Test
