@@ -326,11 +326,27 @@ source-file "${HOME}/.tmux-themepack/powerline/block/orange.tmuxtheme"
 
 [mbdolato](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
-export PATH="$PATH:/usr/local/bin/"
+## Better tmux 
+[Oh my tmux](https://github.com/gpakosz/.tmux)
 
-# Where is my stuff
+```
+$ cd
+$ git clone https://github.com/gpakosz/.tmux.git
+$ ln -s -f .tmux/.tmux.conf
+$ cp .tmux/.tmux.conf.local .
 
+```
 
 # La commande apt ultime
 
 apt install -y anger caca-utils highlight atool w3m poppler-utils mediainfo apt install  mosh parallel
+
+# To kill a detached session in mosh
+```
+ps -ef | grep mosh
+
+kill xxxxx
+
+```
+
+

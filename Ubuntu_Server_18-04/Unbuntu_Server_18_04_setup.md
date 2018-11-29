@@ -117,7 +117,7 @@ sudo systemctl enable postgresql.service
 
 Add following lines in pg_hba.conf
 ```
-sudo vi /etc/postgresql/11/main/pg_hba.conf
+sudo vi /etc/postgresql/10/main/pg_hba.conf
 
 
 #Giving acces to Docker containers
