@@ -49,6 +49,11 @@ export LC_ALL=en_US.UTF-8
 [Seven command line writers tools](https://opensource.com/article/18/11/command-line-tools-writers?utm_medium=Email&utm_campaign=weekly&sc_cid=701f2000000RRCNAA4)
 pip install proselint
 
+# Atom with transparent background
+
+[A nice Video Background](https://youtu.be/TdpBRZ0dZhw)
+
+
 
 # Get refund for IOS apps
 
@@ -326,7 +331,7 @@ source-file "${HOME}/.tmux-themepack/powerline/block/orange.tmuxtheme"
 
 [mbdolato](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
-## Better tmux 
+## Better tmux
 [Oh my tmux](https://github.com/gpakosz/.tmux)
 
 ```
@@ -348,5 +353,3 @@ ps -ef | grep mosh
 kill xxxxx
 
 ```
-
-

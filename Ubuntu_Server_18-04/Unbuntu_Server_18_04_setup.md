@@ -128,6 +128,7 @@ host    all             all             192.168.0.1/24            md5
 
 Change the following lines in etc/postgresql/10/main/postgresql.conf
 ```
+listen_addresses = '*'
 ssl = off
 ```
 Save and run:
@@ -140,8 +141,9 @@ sudo systemctl restart postgresql.service
 ```
 sudo -i -u postgres
 createuser  --interactive  # enter dba as user name, make it a super user
-
-sudo adduser dba #to set password
+ALTER USER dba PASSWORD 'THEPASSWORD';
+\q
+sudo adduser dba #to set password in Linux host
 ```
 ### Test
 
@@ -151,7 +153,6 @@ psql -U dba postgres # ou psql -d template1 si ça ne marche pas
 \q
 
 ```
-
 
 ### To exit Psql
 ```
