@@ -41,6 +41,11 @@ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)
 sudo apt update
 sudo apt upgrade
 ```
+## Install ruby
+
+sudo apt install ruby-full
+
+
 
 ## Switch to zsh
 
@@ -77,6 +82,8 @@ Reload your shell
 
 ```
 exec $SHELL -l
+
+## 
 ```
 ## Fix locales
 ```
