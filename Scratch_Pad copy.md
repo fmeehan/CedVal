@@ -296,51 +296,18 @@ Start Duet by going System Preferences, Displays, Air Display Selection (Bottom 
 Put Chrome on the iPad screen
 Put Atom, iTerm2 (or other combination) sharing full screen
 
-In Iterm2 SSH to a serveur. Start Tmux
+# Blink IOS Mosh 
 
-Display tmux sessions
-tmux new -s myname
+## Blink cheat sheet
 
-petrus ➜  github  tmux ls
-1: 1 windows (created Sat Nov 24 13:00:16 2018) [134x62]
-fm001: 1 windows (created Fri Nov 23 22:33:58 2018) [184x19]
+** insert photo
 
-tmux kill-session -t 1
 
-tmux a -t fm001
+## Themes for Blink terminal (IOS)
 
-Create 3 panes
+https://github.com/blinksh/themes/tree/master/themes
 
-Cntrl-b + c #trois fois
-Cntrl-b + " #to split pane horizontaly
 
-Cntrl-b + w  #Select window to use
-
-Cntrl-b + d  #To disconnect the tmux session
-
-## To source .tmux.conf
-
-Prefix+B :
-Then type:
-
-source-file ~/.tmux.conf
-
-source-file "${HOME}/.tmux-themepack/powerline/block/orange.tmuxtheme"
-
-# Nice tmux themes
-
-[mbdolato](https://github.com/mbadolato/iTerm2-Color-Schemes)
-
-## Better tmux
-[Oh my tmux](https://github.com/gpakosz/.tmux)
-
-```
-$ cd
-$ git clone https://github.com/gpakosz/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
-
-```
 
 # La commande apt ultime
 
