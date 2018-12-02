@@ -13,17 +13,10 @@ cd ~/docker/taiga
 docker build -t taiga  .
 
 
+docker run -t -i taiga sh 
 
-## install basic packages
+apt install rabbitmq-server   -y
 
-docker run -–log-driver syslog –-log-opt syslog-address=udp://192.168.0.152:1111 alpine echo hello world
+sudo apt install curl
 
-Note that each instruction is run independently, and causes a new image to be created - so RUN cd /tmp will not have any effect on the next instructions.
-
-Whenever possible, Docker will re-use the intermediate images (cache), to accelerate the docker build process significantly. This is indicated by the Using cache message
-in the console output. (For more information, see the Build cache section in the Dockerfile best practices guide):
-
-docker run -d --name  Taiga  -p localhost:80:80
-
-
-docker run -it taiga -p 80:80 /bin/bash
+curl -sL https://deb.nodesource.com/setup_10.x |  bash -         

@@ -1,3 +1,15 @@
+To do:
+
+Put files .zhsrc and other goodies from ~/ in Github
+
+# inquire this
+https://www.jhipster.tech/tech-stack/
+
+
+# how-to-create-docker-images-with-dockerfile
+
+https://www.howtoforge.com/tutorial/how-to-create-docker-images-with-dockerfile/
+
 ## Dockerfile examples
 
 [From Linux-on-ibmz](https://github.com/linux-on-ibm-z/dockerfile-examples)
@@ -43,11 +55,14 @@ export LC_ALL=en_US.UTF-8
 
 # Find file modified in the last 10 days
 
+
     find /<directory> -newermt "1 day ago" -ls
 
 # To read
 
 <https://eng.lifion.com/my-recommended-atom-editor-setup-bb13f9cc4329>
+
+
 
 #Tools for writing at terminal
 [Seven command line writers tools](https://opensource.com/article/18/11/command-line-tools-writers?utm_medium=Email&utm_campaign=weekly&sc_cid=701f2000000RRCNAA4)
@@ -300,7 +315,7 @@ Start Duet by going System Preferences, Displays, Air Display Selection (Bottom 
 Put Chrome on the iPad screen
 Put Atom, iTerm2 (or other combination) sharing full screen
 
-# Blink IOS Mosh 
+# Blink IOS Mosh
 
 ## Blink cheat sheet
 

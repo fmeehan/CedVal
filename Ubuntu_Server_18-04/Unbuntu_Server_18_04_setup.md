@@ -41,6 +41,11 @@ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)
 sudo apt update
 sudo apt upgrade
 ```
+# Package Install
+```
+sudo apt install tmux cowsay mc git fonts-powerline
+```
+
 ## Install ruby
 
 sudo apt install ruby-full
@@ -83,8 +88,43 @@ Reload your shell
 ```
 exec $SHELL -l
 
-## 
+#Oh my zschell
+ [Themes images](https://zshthem.es/all/)
+
+## Change zshell theme
+ change line .zshrc
 ```
+ ZSH_THEME="nanotech"
+```
+ to the theme you want to use
+
+#tmux with tmuxinator
+[tmuxinator](https://collectiveidea.com/blog/archives/2017/03/27/using-tmuxinator-to-automate-your-environment)
+## Setup
+```
+gem install tmuxinator
+mkdir ~/.bin
+cd ~/.bin
+cp /var/lib/gems/2.5.0/gems/tmuxinator-0.13.0/completion/tmuxinator.zsh .
+```
+## First tmux configuration
+run:
+```
+mux new monitor
+```
+The configuration that is created can be find in ~/.config/tmuxinator/
+
+## Change tmux Themes
+
+You have to do this inside a tmux session
+
+```
+CMD-a :
+source-file /home/fmeehan/.tmux-themepack/powerline/double/orange.tmuxtheme
+
+
+
+
 ## Fix locales
 ```
 sudo sh -c "echo 'LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8' >> /etc/environment"
@@ -97,11 +137,6 @@ cd ~
 git clone https://github.com/fmeehan/cedval.git
 ```
 
-
-# Package Install
-```
-sudo apt install tmux cowsay mc git
-```
 ## Additional stuff
 
 
