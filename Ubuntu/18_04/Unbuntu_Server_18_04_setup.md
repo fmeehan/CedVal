@@ -279,6 +279,10 @@ docker run -p 70:80 \
 -d dpage/pgadmin4
 ```
 
+# Freenode irc access
+Once connected enter following to enable access to channels
+/msg NickServ identify fmeehan CK$B6B;72$tD
+
 # DNS resolution dilemma
 
 Not sure about this /run/systemd/resolve/resolv.conf

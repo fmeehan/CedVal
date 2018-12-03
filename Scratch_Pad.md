@@ -6,6 +6,14 @@ Put files .zhsrc and other goodies from ~/ in Github
 https://www.jhipster.tech/tech-stack/
 
 
+
+## How to copy file from Linux and MacOSX
+
+For example, transfer of postgresql.conf to my Mac, via SSH.
+```
+scp postgresql.conf francoismeehan@192.168.0.105:/Users/francoismeehan/Downloads
+```
+
 # how-to-create-docker-images-with-dockerfile
 
 https://www.howtoforge.com/tutorial/how-to-create-docker-images-with-dockerfile/
