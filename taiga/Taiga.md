@@ -46,7 +46,15 @@ sudo systemctl restart postgresql.service
 docker-compose up -d
 ```
 
+# Deploy taiga with data
+
+That could be fun!
+https://github.com/taigaio/taiga-scripts
+
 
 ## Django Adminstration Panel
 
 Go to: [http://petrus/admin/](http://petrus/admin/)
+
+***How to put url shortcut as References  on bottom of document
+https://github.com/benhutchins/docker-taiga***

@@ -5,6 +5,25 @@ Put files .zhsrc and other goodies from ~/ in Github
 # inquire this
 https://www.jhipster.tech/tech-stack/
 
+# Documentation server selection
+
+## 
+
+### Github as a document repository
+
+Feasable, reasonable ?
+
+You Bet! [Github Pages](https://pages.github.com/)
+
+
+## 
+[Jekyll site](https://jekyllrb.com/)
+
+Video: What is [Github Pages?](https://youtu.be/2MsN8gpT6jY)
+
+
+
+
 
 
 ## How to copy file from Linux and MacOSX
