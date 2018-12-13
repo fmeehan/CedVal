@@ -1,0 +1,33 @@
+# Use root/example as user/password credentials
+version: '3.7'
+
+services:
+
+  db:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - mysql_prod:/var/lib/mysql/data
+    environment:
+      MYSQL_ROOT_PASSWORD: nx9010
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 60:8080
+
+volumes:
+    mysql_prod:
+      driver: local-persist
+      driver_opts:
+        type: bind
+        device: $PWD
+        mount: /opt/mysql_on_docker
+
+volumes:
+  data:
+    driver: local-persist
+    driver_opts:
+      mountpoint: /opt/mysql_on_docker
