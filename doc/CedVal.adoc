@@ -1,0 +1,23 @@
+// :doctype: book
+:authors: Meehan, François
+:doctitle: CedVal technical documentation
+:toc:
+:imagesdir: ./images
+:iconsdir: ./icons
+:stylesdir: ./styles
+ifdef::backend-pdf[:notitle:]
+ifdef::backend-pdf[]
+endif::[]
+= {doctitle}
+[discrete]
+Awesome apps ready for you to use
+
+{authors}
+
+== And then came Docker
+
+
+_Hello_ there.
+
+== Second Section
+Once upon a time...
